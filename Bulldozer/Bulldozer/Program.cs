@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
+using Bulldozer;
 
 namespace Bulldozer
 {
@@ -30,9 +31,19 @@ namespace Bulldozer
         public string color { get; set; }
     }
 
-    
+    class Kart
+    {
+        public Kart()
+        {
+
+        }
+        public bool moves { get; set; }
+        public string manufacturer { get; set; }
+        public string color { get; set; }
+    }
+
 }
-    class Program
+class Program
     {
         static void Main(string[] args)
         {
