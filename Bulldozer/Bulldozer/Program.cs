@@ -21,9 +21,12 @@ namespace Bulldozer
         static void Main(string[] args)
         {
             var dozer = new BullDozerClass("Yellow", "Mini");
+            var dozer2 = new BullDozerClass("Red", "Large");
            
-
-            Console.WriteLine("Bulldozer is: " + dozer.color);
+    
+            Console.WriteLine("Bulldozer 1  is: " + dozer.color);
+            Console.WriteLine("Bulldozer 2 is: " + dozer2.color);
+            Console.WriteLine();
         }
     }
 }
