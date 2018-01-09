@@ -39,6 +39,24 @@ namespace Bulldozer
         public string name { get; set; }
     }
 
+    public class Human
+    {
+        public Human()
+        {
+            
+        }
+
+        public string name { get; set; }
+    }
+    public class Woman : GeneralObject 
+    {
+        public Woman()
+        {
+            
+        }
+        
+    }
+
     class Kart : GeneralObject
     {
         public Kart()
@@ -62,13 +80,10 @@ class Program
     {
         static void Main(string[] args)
         {
-            var dozer = new BullDozerClass("Yellow", "Mini");
-            var dozer2 = new BullDozerClass("Red", "Large");
-           
-    
-            Console.WriteLine("Bulldozer 1  is: " + dozer.color);
-            Console.WriteLine("Bulldozer 2 is: " + dozer2.color);
-            Console.WriteLine();
+            var man = new Man();
+            var kart = new Kart();
+            var alien = new Alien();
+
         }
     }
 }
