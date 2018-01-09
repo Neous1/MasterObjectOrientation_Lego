@@ -29,26 +29,27 @@ namespace Bulldozer
         public bool moves { get; set; }    
         public string color { get; set; }
     }
-    class Man : GeneralObject
+
+    public class Human : GeneralObject
+    {
+        public Human()
+        {
+
+        }
+
+        public string name { get; set; }
+    }
+    class Man : Human
     {
         public Man()
         {
             
         }
 
-        public string name { get; set; }
     }
 
-    public class Human
-    {
-        public Human()
-        {
-            
-        }
 
-        public string name { get; set; }
-    }
-    public class Woman : GeneralObject 
+    public class Woman : Human
     {
         public Woman()
         {
@@ -75,8 +76,7 @@ namespace Bulldozer
         public string planet { get; set; }
     }
 
-}
-class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -87,3 +87,5 @@ class Program
         }
     }
 }
+
+
