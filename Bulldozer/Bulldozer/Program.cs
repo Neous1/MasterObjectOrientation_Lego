@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +17,21 @@ namespace Bulldozer
         public string color { get; set; }
         public string size { get; set; }
     }
+
+    class Man
+    {
+        public Man()
+        {
+            
+        }
+
+        public bool moves { get; set; }
+        public string name { get; set; }
+        public string color { get; set; }
+    }
+
+    
+}
     class Program
     {
         static void Main(string[] args)
