@@ -36,9 +36,7 @@ namespace Bulldozer
             
         }
 
-        public bool moves { get; set; }
         public string name { get; set; }
-        public string color { get; set; }
     }
 
     class Kart
@@ -47,9 +45,7 @@ namespace Bulldozer
         {
 
         }
-        public bool moves { get; set; }
         public string manufacturer { get; set; }
-        public string color { get; set; }
     }
 
     class Alien
@@ -58,9 +54,7 @@ namespace Bulldozer
         {
 
         }
-        public bool moves { get; set; }
         public string planet { get; set; }
-        public string color { get; set; }
     }
 
 }
