@@ -8,6 +8,11 @@ namespace Bulldozer
 {
     class BullDozerClass
     {
+        public BullDozerClass(string _color, string _size)
+        {
+            this.color = _color;
+            this.size = _size;
+        }
         public string color { get; set; }
         public string size { get; set; }
     }
@@ -15,9 +20,8 @@ namespace Bulldozer
     {
         static void Main(string[] args)
         {
-            var dozer = new BullDozerClass();
-            dozer.color = "Yellow";
-            dozer.size = "Mini";
+            var dozer = new BullDozerClass("Yellow", "Mini");
+           
 
             Console.WriteLine("Bulldozer is: " + dozer.color);
         }
