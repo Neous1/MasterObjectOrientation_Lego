@@ -29,6 +29,8 @@ namespace Encapsulation
         public int AddNumbers(int num1, int num2)
         {
             var result = num1 + num2;
+            result += 100;
+            result -= 100;
             return result;
         }
     }
