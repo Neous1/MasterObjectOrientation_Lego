@@ -8,81 +8,41 @@ using Bulldozer;
 
 namespace Bulldozer
 {
-    class BullDozerClass
+    public class FactoryWorker
     {
-        public BullDozerClass(string _color, string _size)
-        {
-            this.color = _color;
-            this.size = _size;
-        }
-        public string color { get; set; }
-        public string size { get; set; }
-    }
-
-    public class GeneralObject
-    {
-        public GeneralObject()
+        public FactoryWorker()
         {
             
         }
 
-        public bool moves { get; set; }    
-        public string color { get; set; }
-    }
-
-    public class Human : GeneralObject
-    {
-        public Human()
+        public void Count(int number)
         {
+            if (Total == null)
+                Total = 0;
 
+            Total += Convert.ToSingle(number);
+            Console.WriteLine(Total.ToString());
         }
 
-        public string name { get; set; }
-    }
-    class Man : Human
-    {
-        public Man()
+        public void Count(float number)
         {
-            
+            Total += number;
+            Console.WriteLine(Total.ToString());
         }
+        //method overload
 
-    }
 
+        public float Total { get; set; }
 
-    public class Woman : Human
-    {
-        public Woman()
-        {
-            
-        }
-        
-    }
-
-    class Kart : GeneralObject
-    {
-        public Kart()
-        {
-
-        }
-        public string manufacturer { get; set; }
-    }
-
-    class Alien : GeneralObject
-    {
-        public Alien()
-        {
-
-        }
-        public string planet { get; set; }
-    }
-
+    } 
     class Program
     {
         static void Main(string[] args)
         {
-            var man = new Man();
-            var kart = new Kart();
-            var alien = new Alien();
+            var worker = new FactoryWorker();
+            worker.Count(4);
+            worker.Count(5);
+            worker.Count(4.5f);
 
         }
     }
