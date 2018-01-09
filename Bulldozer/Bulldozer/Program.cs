@@ -42,6 +42,17 @@ namespace Bulldozer
         public string color { get; set; }
     }
 
+    class Alien
+    {
+        public Alien()
+        {
+
+        }
+        public bool moves { get; set; }
+        public string planet { get; set; }
+        public string color { get; set; }
+    }
+
 }
 class Program
     {
