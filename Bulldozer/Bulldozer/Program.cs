@@ -29,7 +29,7 @@ namespace Bulldozer
         public bool moves { get; set; }    
         public string color { get; set; }
     }
-    class Man
+    class Man : GeneralObject
     {
         public Man()
         {
@@ -39,7 +39,7 @@ namespace Bulldozer
         public string name { get; set; }
     }
 
-    class Kart
+    class Kart : GeneralObject
     {
         public Kart()
         {
@@ -48,7 +48,7 @@ namespace Bulldozer
         public string manufacturer { get; set; }
     }
 
-    class Alien
+    class Alien : GeneralObject
     {
         public Alien()
         {
