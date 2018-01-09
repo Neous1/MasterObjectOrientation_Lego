@@ -19,6 +19,16 @@ namespace Bulldozer
         public string size { get; set; }
     }
 
+    public class GeneralObject
+    {
+        public GeneralObject()
+        {
+            
+        }
+
+        public bool moves { get; set; }    
+        public string color { get; set; }
+    }
     class Man
     {
         public Man()
