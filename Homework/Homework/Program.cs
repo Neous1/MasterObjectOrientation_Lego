@@ -13,7 +13,7 @@ namespace Homework
 
     }
 
-    class SaloonCar : Car
+    public class SaloonCar : Car
     {
         public int NumberOfSeats { get; set; }
 
@@ -35,6 +35,12 @@ namespace Homework
     {
         static void Main(string[] args)
         {
+            var saloonCar1 = new SaloonCar(numberOfSeats:2);
+            var saloonCar2 = new SaloonCar(numberOfSeats:3, manufacturer:"Nissan");
+            var saloonCar3 = new SaloonCar(numberOfSeats:4, manufacturer:"Ford", colour:"Purple");
+
+            Console.WriteLine(saloonCar1);
+            
         }
     }
 }
